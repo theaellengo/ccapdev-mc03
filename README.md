@@ -20,7 +20,7 @@ The web application accepts two inputs - a name and a number. When the user subm
 
 The web application then saves the values in the database, then display the values in `index.hbs`. Use `views/partials/card.hbs` to render the `<div>` for each contact. Upon submitting the form, the contact should be displayed immediately **without refreshing the page**.
 
-Hint: the client should communicate with the server **asynchronously**.
+**HINT:** the client should communicate with the server **asynchronously**.
 
 The picture below shows how the web application should display the values that we have entered earlier:
 ![alt text](https://github.com/arvention/ccapdev-mc03/blob/master/displayed-contact.png "Displayed Contact")
