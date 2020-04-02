@@ -25,15 +25,15 @@ The web application then saves the values in the database, then display the valu
 The picture below shows how the web application should display the values that we have entered earlier:
 ![alt text](https://github.com/arvention/ccapdev-mc03/blob/master/displayed-contact.png "Displayed Contact")
 
-Note that the number should be unique for each contact - no two contacts may have the same number. Thus, you are required to check if the current value entered by the user in the `number` text field has not yet been used by any other contact in the database. You need to check this every time the user enters a number in the `number` text field.
+Note that the number should be **UNIQUE** for each contact - no two contacts may have the same number. Thus, you are required to check if the current value entered by the user in the `number` text field has not yet been used by any other contact in the database. You need to check this **EVERY TIME** the user enters a number in the `number` text field.
 
-If the current value in the `number` text field is already in the database:
+If the current value in the `number` text field **EXISTS** in the database:
 - Change the background color of the `number` text field to `red`.
 - Display the error message `Number already registered` in the `<p id="error">` element in `home.hbs`.
 - Disable the `submit` button.
 
 Else:
-- Change the background color of the `number` text field back to `##E3E3E3`
+- Change the background color of the `number` text field back to `#E3E3E3`
 - Remove the error message in the `<p id="error">` element in `home.hbs`.
 - Enable the `submit` button.
 
