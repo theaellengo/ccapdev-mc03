@@ -9,6 +9,14 @@ Mini Challenge 3 for CCAPDEV1920T2
 ## Submission Details
 - Fork this repository and submit the URL of the forked repository to AnimoSpace. If you know the internet will be slow, submit earlier to meet the deadline.
 
+## Content
+- [controllers](https://github.com/arvention/ccapdev-mc03/tree/master/controllers) - This folder contains files which defines callback functions for client requests.
+- [models](https://github.com/arvention/ccapdev-mc03/tree/master/models) - This folder contains files for database modeling and access.
+- [public](https://github.com/arvention/ccapdev-mc03/tree/master/public) - This folder contains static assets such as css, js, and image files.
+- [routes](https://github.com/arvention/ccapdev-mc03/tree/master/routes) - This folder contains files which describes the response of the server for each HTTP method request to a specific path in the server.
+- [views](https://github.com/arvention/ccapdev-mc03/tree/master/views) - This folder contains all hbs files to be rendered when requested from the server.
+- [index.js](https://github.com/arvention/ccapdev-mc03/blob/master/index.js) - The main entry point of the web application.
+
 ## Challenge Description
 You are to create a web application which simulates an online phonebook.
 
@@ -40,9 +48,8 @@ Else if the current value in the `number` text field **IS NOT YET IN THE DATABAS
 The picture below shows the changes in the form if the current value in the `number` text field is already in the database:
 ![alt text](https://github.com/arvention/ccapdev-mc03/blob/master/error.png "Error")
 
-You are already provided with the skeleton code organized in MVC architecture. Your task is to study the web application and complete the code of the following files:
+You are already provided with the skeleton code organized in MVC architecture. Your task is to study the web application and complete the code of the files below. You are **NOT ALLOWED** to modify other files except the files below. Editable parts of code are marked with `TODO` comments, where you can insert your code.
 - [`controllers/controller.js`](https://github.com/arvention/ccapdev-mc03/blob/master/controllers/controller.js)
 - [`models/UserModel.js`](https://github.com/arvention/ccapdev-mc03/blob/master/models/UserModel.js)
 - [`public/js/home.js`](https://github.com/arvention/ccapdev-mc03/blob/master/public/js/home.js)
 - [`views/home.hbs`](https://github.com/arvention/ccapdev-mc03/blob/master/views/home.hbs)
-
