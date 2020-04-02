@@ -14,6 +14,7 @@ const controller = {
     */
     getIndex: function(req, res) {
         // your code here
+        res.render('home'); // This is to load the page initially
     },
 
     /*
