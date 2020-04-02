@@ -1,13 +1,12 @@
-# ccapdev-mc03
-Mini Challenge 3 for CCAPDEV1920T2
+# Mini Challenge 3 for CCAPDEV1920T2
 
 ## General Instructions
-- READ THE INSTRUCTIONS FIRST BEFORE PROCEEDING!
+- **READ THE INSTRUCTIONS FIRST BEFORE PROCEEDING!**
 - You are provided with a skeleton code for this Mini-Challenge. You are **NOT ALLOWED** to modify any part of the code unless specified. Editable parts of code are marked with `TODO` comments.
-- For any clarifications, ask your instructor
+- For any clarifications, ask your instructor.
 
 ## Submission Details
-- Fork this repository and submit the URL of the forked repository to AnimoSpace. If you know the internet will be slow, submit earlier to meet the deadline.
+- Fork this repository and submit the URL of the forked repository to AnimoSpace. 
 
 ## Content
 - [controllers](https://github.com/arvention/ccapdev-mc03/tree/master/controllers) - This folder contains files which defines callback functions for client requests.
