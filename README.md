@@ -4,6 +4,7 @@
 - **READ THE INSTRUCTIONS FIRST BEFORE PROCEEDING!**
 - You are provided with a skeleton code for this Mini-Challenge. You are **NOT ALLOWED** to modify any part of the code unless specified. Editable parts of code are marked with `TODO` comments.
 - For any clarifications, ask your instructor.
+- This Mini Challenge is _no longer graded_ but will serve as additional practice for working with databases, AJAX and express (with handlebars). Submission is **highly encouraged**.
 
 ## Local Set Up
 - Make sure MongoDB is installed and running.
@@ -65,3 +66,9 @@ You are already provided with the skeleton code organized in MVC architecture. Y
 - [`views/home.hbs`](views/home.hbs)
 
 Goodluck and stay safe! :sunglasses:
+
+#### References
+Maximize the materials uploaded for class and the resources readily available on the internet.
+
+* [ccapdev-ajax](https://github.com/arvention/ccapdev-ajax) code sample
+* [ccapdev-mongoose](https://github.com/arvention/ccapdev-mongoose) code sample
