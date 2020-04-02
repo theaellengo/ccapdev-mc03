@@ -33,6 +33,8 @@ The web application then saves the values in the database, then display the valu
 The picture below shows how the web application should display the values that we have entered earlier:
 ![alt text](https://github.com/arvention/ccapdev-mc03/blob/master/displayed-contact.png "Displayed Contact")
 
+Each contact may be removed using the `X` button on the upper right of the `<div>`. Upon clicking the `X` button, the web application deletes the contact from the database then removes the corresponding `<div>` of the contact from [`views/index.hbs`](https://github.com/arvention/ccapdev-mc03/blob/master/views/index.hbs). This operation should be done **without refreshing the page**.
+
 Note that the number should be **UNIQUE** for each contact - no two contacts may have the same number. Thus, you are required to check if the current value entered by the user in the `number` text field has not yet been used by any other contact in the database. You need to check this **EVERY TIME** the user enters a number in the `number` text field.
 
 If the current value in the `number` text field **IS IN THE DATABASE**:
@@ -53,3 +55,5 @@ You are already provided with the skeleton code organized in MVC architecture. Y
 - [`models/UserModel.js`](https://github.com/arvention/ccapdev-mc03/blob/master/models/UserModel.js)
 - [`public/js/home.js`](https://github.com/arvention/ccapdev-mc03/blob/master/public/js/home.js)
 - [`views/home.hbs`](https://github.com/arvention/ccapdev-mc03/blob/master/views/home.hbs)
+
+Goodluck and stay safe! :sunglasses:
