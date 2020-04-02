@@ -5,8 +5,13 @@
 - You are provided with a skeleton code for this Mini-Challenge. You are **NOT ALLOWED** to modify any part of the code unless specified. Editable parts of code are marked with `TODO` comments.
 - For any clarifications, ask your instructor.
 
+## Local Set Up
+- Make sure MongoDB is installed and running.
+- Run `npm install` after cloning the forked repository.
+- To run the application, execute `node index.js`
+
 ## Submission Details
-- Fork this repository and submit the URL of the forked repository to AnimoSpace. 
+- Fork this repository and submit the URL of the forked repository to AnimoSpace.
 
 ## Content
 - [controllers](controllers) - This folder contains files which defines callback functions for client requests.
