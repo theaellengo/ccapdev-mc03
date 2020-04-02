@@ -34,6 +34,8 @@ The web application then saves the values in the database, then display the valu
 
 **HINT:** the client should communicate with the server **asynchronously**.
 
+**HINT:** The server can render the handlebars template and send the rendered HTML partial. See the [express documentation on `res.render`](https://expressjs.com/en/api.html#res.render) to know more.
+
 The picture below shows how the web application should display the values that we have entered earlier:
 ![alt text](displayed-contact.png "Displayed Contact")
 
