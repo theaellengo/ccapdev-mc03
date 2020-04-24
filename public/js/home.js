@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
     /*
-    TODO:   The code below attaches a `keyup` event to `#number` text field.
+    DONE:   The code below attaches a `keyup` event to `#number` text field.
             The code checks if the current number entered by the user in the
             text field does not exist in the database.
 
@@ -16,11 +16,23 @@ $(document).ready(function () {
             - `#submit` is enabled
     */
     $('#number').keyup(function () {
-        // your code here
+        var number = $(this).val();
+
+        $.get('/getCheckNumber', { number : number }, function(result){
+            if (result.number == number) {
+                $('#number').css('background-color', 'red');
+                $('#error').text('Number already registered');
+                $('#submit').prop('disabled', true);
+            } else {
+                $('#number').css('background-color', '#E3E3E3');
+                $('#error').text('');
+                $('#submit').prop('disabled', false);
+            }
+        });
     });
 
     /*
-    TODO:   The code below attaches a `click` event to `#submit` button.
+    DONE:   The code below attaches a `click` event to `#submit` button.
             The code checks if both text fields are not empty. The code
             should communicate asynchronously with the server to save
             the information in the database.
@@ -31,7 +43,17 @@ $(document).ready(function () {
             The name and the number fields are reset to empty values.
     */
     $('#submit').click(function () {
-        // your code here
+        var name = $('#name').val().trim();
+        var number = $('#number').val().trim();
+
+        if (name && number) {
+            $.get('/add', { name : name, number : number }, function(result){
+                $('#name').val('');
+                $('#number').val('');
+                $('#contacts').append(result);
+            });
+            $('#contacts').load('/#contacts');
+        }
     });
 
     /*
@@ -42,7 +64,10 @@ $(document).ready(function () {
             class `.contact`.
     */
     $('#contacts').on('click', '.remove', function () {
-        // your code here
+        var number =  $(this).prev().children().filter(":nth-child(2)").html();
+
+        $.get('/delete', number, function (result) {});
+        $(this).parent().remove();
     });
 
 })
